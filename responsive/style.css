@@ -1,0 +1,239 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+ * { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: white;
+}
+.color {
+    color: #A59678;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 6em 5%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+h1, h2,
+.color,
+.nav__item,
+.section-one__btn {
+    font-family: 'Oswald', sans-serif;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5em;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #A59678;
+}
+p {
+    margin: 1.5em 0;
+}
+.section-two p,
+.section-three__left__content {
+    color: black;
+}
+.section-three__right h2 {
+    color: white;
+}
+.header {
+    position: fixed;
+    background: #2E323F;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2E323F;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+.header__logo {
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid .2em #A59678;
+}
+.header__logo:hover,
+.section-one__btn:hover,
+a:hover {
+    opacity: 60%;
+    transition: ease .3s;
+}
+.nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #2E323F;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .4);
+    overflow: hidden;
+    transition: ease .4s;
+}
+.nav__item {
+    display: block;
+    margin: .6em 0;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: ease .4s;
+    padding: .1em;
+    font-size: 1.1rem;
+}
+.nav-btn {
+    color: #A59678;
+}
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+#check:checked~.icons #menu-icon {
+    display: none;
+}
+#close-icon {
+    display: none;
+}
+#check:checked~.icons #close-icon {
+    display: block;
+}
+#check:checked~.nav {
+    height: 17rem;
+}
+#check:checked~.nav a {
+    transform: translateY(0);
+}
+.section-one {
+    background: #3B4050;
+    min-height: 660px;
+    padding: 10em 0;
+}
+.section-one__content {
+    margin-bottom: 3em;
+}
+.section-one__btn {
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+    border-radius: 50px;
+    background: #A59678;
+    font-size: 1.5rem;
+}
+.section-two {
+    background: #a596781a;
+}
+.darkb {
+    background: #3B4050;
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+.section-four {
+    background: #3B4050;
+}
+
+.section-four a {
+    display: block;
+    margin-bottom: .5em;
+}
+.margin {
+    margin-bottom: 3em;
+}
+@media (min-width: 700px) {
+    .nav__item {
+        font-size: 1.2rem;
+    }
+    .margin {
+        margin-bottom: 2em;
+    }
+    .section-three__right {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    .container {
+        padding: 6em 10%;
+    }
+    .header {
+        padding: 1em 10%;
+    }
+}
+@media (min-width: 1100px) {
+    .row {
+        flex-direction: row;
+    }
+    .container {
+        padding: 6em 15%;
+    }
+    .header {
+        padding: 1em 15%;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .section-one .col {
+       margin-left: 1em;
+    }
+    .section-one__title {
+        text-align: left;
+    }
+    .section-two p {
+         margin: 0 1em;
+    }
+    .section-three__right {
+        flex-direction: column;
+        margin: 0 1em;
+    }
+    .section-four .wider {
+        width: 40%;
+        text-align: left;
+    }
+    .icons {
+        display: none;
+    }
+    .nav {
+        position: relative;
+        overflow: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .nav__item {
+        margin: 1.5em;
+    }
+    .margin {
+        margin-right: 6em ;
+    }
+    .header__logo {
+        padding: .5em;
+    }
+}

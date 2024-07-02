@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <title>Responsive Layout</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__logo">
+            <a href="#">
+                <img class="header__logo__img" src="img/logo.svg" alt="logo">
+            </a>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <div class="nav">
+                <a class="nav__item" href="#">Home</a>
+                <a class="nav__item" href="#">About us</a>
+                <a class="nav__item margin" href="#">Learn</a>
+                <a class="nav__item" href="#">Sign in</a>
+                <a class="nav__item nav-btn" href="#">Sign up</a>
+        </div>
+    </header>
+
+    <section class="section-one">
+        <div class="container row">
+            <div class="col">
+                <h1 class="section-one__title">Lorem ipsum dolor sit amet,<span class="color"> consectetur adipisicing elit.</span></h1>
+            </div>
+            <div class="col">
+                <p class="section-one__content">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <a class="section-one__btn">I want to learn</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-two">
+        <div class="container row">
+            <div class="col">
+                <h2 class="section-title">Lorem, ipsum.</h2>
+                <p class="section-two__content">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut
+                    enim ad minim veniam.</p>
+            </div>
+            <div class="col">
+                <h2 class="section-title">Lorem.</h2>
+                <p class="section-two__content">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut
+                    enim ad minim veniam.</p>
+            </div>
+            <div class="col">
+                <h2 class="section-title">Lorem, ipsum.</h2>
+                <p class="section-two__content">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut
+                    enim ad minim veniam.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-three">
+        <div class="container row">
+            <div class="section-three__left">
+                <h2 class="section-title">It doesn’t have to be so hard</h2>
+                <p class="section-three__left__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <img src="img/the-image.jpg" alt="image" class="section-three__left__img">
+                <p class="section-three__left__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="section-three__right">
+                <div class="col darkb">
+                    <h2 class="section-title">Break it down</h2>
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col darkb">
+                    <h2 class="section-title">Work your way up</h2>
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col darkb">
+                    <h2 class="section-title">Lorem, ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-four">
+        <div class="container">
+            <h1 class="section-four__title">just scratching the surface</h1>
+            <div class="row">
+                <div class="col wider">
+                    <h2 class="section-title">About our company</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col ">
+                    <h2 class="section-title">Getting around</h2>
+                       <a href="#">Contact</a>
+                       <a href="#">About</a>
+                       <a href="#">Home</a>
+                </div>
+                <div class="col ">
+                    <h2 class="section-title">Other things</h2>
+                        <a href="#">Lorem ipsum</a>
+                        <a href="#">dolor</a>
+                        <a href="#">sit amet</a>
+                        <a href="#">consectetur</a>
+                </div>
+                <div class="col ">
+                    <h2 class="section-title">And more</h2>
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">dolor</a>
+                    <a href="#">sit amet</a>
+                    <a href="#">consectetur</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
